@@ -13,7 +13,7 @@ const Forcast = ({ title, data, units }) => {
                         <div key={index} className='flex flex-col items-center justify-center'>
                             <p className='font-light text-sm'>{d.title}</p>
                             <img src={d.icon} alt="weather icon" className='w-12 my-1' />
-                            <p className='font-medium'>{`${d.temp}${units === "metric" ? "°C":"°F"}`}</p>
+                            <p className='font-medium'>{`${d.temp}${units === "metric" ? "°C" : "°F"}`}</p>
                         </div>
 
                     ))

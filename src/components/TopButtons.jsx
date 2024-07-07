@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const TopButtons = ({ setQuery }) => {
 
@@ -26,14 +26,19 @@ const TopButtons = ({ setQuery }) => {
     ]
 
     return (
-        <div className='flex items-center  justify-around my-6'>
+        <div className='flex flex-wrap items-center justify-around my-6 space-y-4 md:space-y-0'>
             {
                 cities.map(city =>
-                    <button key={city.id} className='text-lg font-medium hover:bg-gray-700/20 px-3 py-2 rounded-md transition ease-in' onClick={() => setQuery({ q: city.name })}>{city.name}</button>
+                    <button
+                        key={city.id}
+                        className='text-lg font-medium hover:bg-gray-700/20 px-3 py-2 rounded-md transition ease-in w-full md:w-auto'
+                        onClick={() => setQuery({ q: city.name })}>
+                        {city.name}
+                    </button>
                 )
             }
         </div>
     )
 }
 
-export default TopButtons
+export default TopButtons;
