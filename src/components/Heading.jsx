@@ -20,7 +20,7 @@ const Heading = () => {
 
     return (
         <h1 className="relative text-center text-transparent bg-gradient-to-r {...gradientColors} bg-clip-text text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold shadow-md md:shadow-lg">
-            <span className="absolute inset-0 z-0 text-white">ANR Weather Forecast</span>
+            <span className="absolute inset-0 z-0 text-white">NAR Weather Forecast</span>
             <span className="relative z-10">NAR Weather Forecast</span>
         </h1>
     );
