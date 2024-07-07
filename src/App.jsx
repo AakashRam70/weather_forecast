@@ -9,6 +9,7 @@ import Inupts from "./components/Index";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Heading from "./components/Heading";
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -28,7 +29,6 @@ const App = () => {
       toast.success(`Fetched weather data for ${data.name}, ${data.country}`);
       setWeather(data);
     });
-    console.log(data);
   };
 
   useEffect(() => {
@@ -44,6 +44,7 @@ const App = () => {
 
   return (
     <div className={`mx-auto max-w-screen-lg mt-4 py-5 px-6 sm:px-8 md:px-16 lg:px-32 bg-gradient-to-br shadow-xl shadow-gray-400 text-white ${formatBackground()}`}>
+      <Heading />
       <TopButtons setQuery={setQuery} />
       <Inupts setQuery={setQuery} setUnits={setUnits} />
 
