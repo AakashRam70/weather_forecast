@@ -4,7 +4,7 @@ const Forcast = ({ title, data, units }) => {
     return (
         <div>
             <div className='flex items-center justify-start mt-6'>
-                <p>{title}</p>
+                <p className='my-1' >{title}</p>
             </div>
             <hr className='my-1' />
             <div className='flex items-center justify-between'>
